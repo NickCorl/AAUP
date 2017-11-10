@@ -474,3 +474,16 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2f6f8', end
 
 
 }
+
+/*The following script is used to remove/add the news box from the carousel and remove/add the news bar below the carousel.*/
+@media only screen and (max-width: 1199px) {
+	.news-box {
+		display: none;
+	}
+}
+
+@media only screen and (min-width: 1200px) {
+	.news-alert {
+		display: none;
+	}
+}
