@@ -24,22 +24,50 @@
   <div class="light-blue">
     <div class="container">
       <header>
-        <!--
-        <img src="assets/Images/aaup-logo-2_0.png" alt="AAUP Logo"
-        width="15%"
-        style="border-style: solid; border-width: 5px; border-color: white;
-        border-radius: 25px;">
-        -->
+        <img src="assets/Images/aaup-logo-3_0.png" alt="AAUP Logo"
+        width="20%" style="margin: 5px 0;">
       </header>
     </div>
     <div class="container">
-      <nav class="navbar navbar-inverse" style="margin: 0;">
+      <nav id="main-nav-bar" class="navbar navbar-inverse" style="margin: 0;">
         <ul class=" nav navbar-nav">
+          <!--TODO: Fix active page.-->
           <li><a href="#">Home</a></li>
-          <li><a href="#">News & Events</a></li>
-          <li><a href="#">Information</a></li>
-          <li><a href="#">Who We Are</a></li>
-          <li><a href="#">Membership</a></li>
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+              News & Events <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">News</a></li>
+              <li><a href="#">Events</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+              Information <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Mines Faculty Senate</a></li>
+              <li><a href="#">Constitution</a></li>
+              <li><a href="#">Bylaws</a></li>
+              <li><a href="#">Documents</a></li>
+              <li><a href="#">AAUP Affiliates</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+              Who We Are <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Mines AAUP Leadership</a></li>
+              <li><a href="#">Our Purpose</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+              Membership <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Why Join Us?</a></li>
+              <li><a href="#">Join AAUP</a></li>
+            </ul>
+          </li>
         </ul>
       </nav>
     </div>

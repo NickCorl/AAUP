@@ -2,7 +2,7 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700);
 
 
-
+/*
 .dropdown-menu > li.kopie > a {
     padding-left:5px;
 }
@@ -80,7 +80,8 @@
    }
 
 }
-
+*/
+/*Old code for styling the nav bar. Consider removing. 11/18/17
 /*
 @media (min-width: 768px) {
   ul.nav li:hover > ul.dropdown-menu {
@@ -108,17 +109,45 @@
     text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
     color: white;
 }
-*/
+
 .navBar-font {
 	font-size: 20px;
 	color: white;
 }
+*/
 
+/*The following code is code added on 11/18/17 for the purpose of fixing
+  the nav bar responsiveness.*/
+#main-nav-bar {
+  background-color: #425262;
+  border-style: none;
+  font-size: 1.1em;
+  font-family: "Open Sans";
+  font-weight: bold;
+}
+
+#main-nav-bar ul li {
+  padding: 5px 10px;
+}
+
+#main-nav-bar > ul > li:hover {
+  transition: background-color 0.2s;
+  background-color: #2b3642;
+}
+
+#main-nav-bar > ul > li > a {
+  color: white;
+}
+
+.dropdown-menu {
+  background-color: white;
+  color: black;
+}
 
 .video-style {
 	border-style: solid;
 	min-width: 500px;
-    border-width: 20px 20px 20px 20px;
+  border-width: 20px 20px 20px 20px;
 	padding-top:0px;
 }
 
