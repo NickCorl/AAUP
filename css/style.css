@@ -1,6 +1,19 @@
 /* nav bar styling for outside div container */
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700);
 
+/*The following fonts were added on 11/18/17. These are the recommended
+fonts for Mines websites.*/
+@font-face {
+  font-family: Gotham;
+  src: url("../assets/Fonts/Gotham-Book.otf");
+}
+
+@font-face {
+  font-family: Gotham;
+  src: url("../assets/Fonts/Gotham-Bold_0.otf");
+  font-weight: bold;
+}
+
 
 /*
 .dropdown-menu > li.kopie > a {
@@ -118,24 +131,30 @@
 
 /*The following code is code added on 11/18/17 for the purpose of fixing
   the nav bar responsiveness.*/
+
+#entire-nav-bar {
+  box-shadow: 0px 10px 20px 5px rgba(0, 0, 0, 0.2);
+  z-index: 7;
+}
 #main-nav-bar {
   background-color: #425262;
   border-style: none;
-  font-size: 1.1em;
-  font-family: "Open Sans";
+  font-size: 1em;
+  font-family: "Gotham";
   font-weight: bold;
 }
 
 #main-nav-bar ul li {
-  padding: 5px 10px;
+
 }
 
-#main-nav-bar > ul > li:hover {
+#main-nav-bar #collapse-nav-bar > ul > li:hover {
   transition: background-color 0.2s;
   background-color: #2b3642;
 }
 
-#main-nav-bar > ul > li > a {
+#main-nav-bar #collapse-nav-bar > ul > li > a,
+#navbar-brand {
   color: white;
 }
 
